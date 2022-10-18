@@ -24,9 +24,10 @@ body {
     width: 0px;
     border-radius: 100%;
     background: linear-gradient(-135deg, #c850c0, #4158d0);
+    transition: all 0.4s linear;
 }
 
-.search-btn.active {
+.wrapper.active {
     height: 4000px;
     width: 4000px;
 }
@@ -38,7 +39,6 @@ body {
     transform: translate(-50%, -50%);
     height: 60px;
     width: 60px;
-    line-height: 60px;
     text-align: center;
     cursor: pointer;
     border-radius: 50%;
@@ -57,7 +57,7 @@ body {
     width: 400px;
     display: flex;
     text-align: center;
-    /* display: none; */
+    visibility: hidden;
 }
 
 .search-data input {
@@ -75,7 +75,7 @@ body {
     position: absolute;
     height: 3px;
     width: 100%;
-    background-color: #fff;
+    background: #fff;
     bottom: 0;
     transform: scaleX(0);
     transition: transform 0.4s 0.3s linear;
@@ -124,5 +124,5 @@ body {
 .search-data span,
 .search-data label,
 .close-btn {
-    display: none;
+    /* display: none; */
 }
