@@ -13,3 +13,12 @@ searchBtn.addEventListener('click', () => {
 
     searchLine.classList.add('active')
 })
+
+closeBtn.addEventListener('click', () => {
+    wrapper.classList.remove('active')
+    searchLine.classList.remove('active')
+
+    input.value = ''
+    searchData.style.visibility = 'hidden'
+    searchBtn.style.display = ''
+})
